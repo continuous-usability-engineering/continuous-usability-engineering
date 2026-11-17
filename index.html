@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Continuous Usability Engineering</title>
+<meta name="description" content="Terminology record for Continuous Usability Engineering — usability treated as a continuously measured and governed engineering property. Working definition, genealogy, scope, and disambiguation.">
+<link rel="canonical" href="https://continuoususabilityengineering.org/">
+<link rel="icon" href="data:,">
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.68 ui-serif, Georgia, "Times New Roman", serif;
+    max-width: 44rem; margin: 2.5rem auto; padding: 0 1.25rem;
+  }
+  h1 { font-size: 1.85rem; margin: 0 0 .1rem; }
+  h2 { font-size: 1.15rem; margin-top: 2.2rem; }
+  .zh { font-size: 1.02rem; margin: 0 0 1.5rem; }
+  code { font-size: .82em; word-break: break-all; }
+  footer { margin-top: 3rem; border-top: 1px solid currentColor; padding-top: .8rem; font-size: .85rem; opacity: .8; }
+  ul { padding-left: 1.3rem; }
+  li { margin: .35rem 0; }
+</style>
+</head>
+<body>
+
+<h1>Continuous Usability Engineering</h1>
+<p class="zh">持续易用性工程（中文名）</p>
+
+<p><em>noun, emerging term.</em> The engineering practice of treating <strong>usability</strong> — whether people can find their way through shipped software — as a continuously measured and governed property: periodic measurement cycles against a held-constant task set, cross-version regression ledgers for discovered issues, human adjudication of severity and acceptance, and release gates that consume usability readings. Organized as an institutional function — a named role, a budget line, an owned ledger — in the way Site Reliability Engineering organizes reliability.</p>
+
+<h2>Character</h2>
+<ul>
+  <li><strong>Deficit-driven, not test-first.</strong> Work is driven by gaps <em>discovered</em> in measurement rounds, not by assertions declared in advance. Declared numbers may inform intent but never gate a release.</li>
+  <li><strong>Cycles, not sessions.</strong> The unit of work is a measurement round; round <em>N</em>'s readings are round <em>N+1</em>'s prescription input. Quantitative targets are warm-started from measurement history rather than cold-started before any data exists — continuity is what makes quantification affordable.</li>
+  <li><strong>Human adjudication is a load-bearing invariant.</strong> Severity judgment and issue acceptance remain human decisions as the practice scales; they are not mechanized away.</li>
+</ul>
+
+<h2>Genealogy</h2>
+<p>Inherited, with deliberate modification, from <strong>Usability Engineering</strong> (Tyldesley&nbsp;1988; Nielsen&nbsp;1993). The ancestor's quantitative core — usability as a measurable engineering quantity, tested after construction — is retained in full. What is modified is its unconditional front-loading of quantitative targets: the practice front-loads only what is mechanically derivable (semantic floors: required information × required decisions), and derives tolerance bands from accumulated measurement history instead.</p>
+<p>From <strong>Site Reliability Engineering</strong> it takes the institutional form, not the domain: formation by having software engineers design the verification function; a named role and budget line rather than a project ritual; regression ledgers and gate policy rather than one-off studies. In one line — the ancestor said <em>“set quantitative goals, build, then test”</em>; this practice says <em>“measure first, then quantify; derive first, then prescribe; run continuously so that quantification and prescription regenerate each cycle.”</em></p>
+
+<h2>Scope and neighbors</h2>
+<p>The term names the engineering-gate layer of <strong>mainstream software practice</strong>. The vacancy it fills is claimed narrowly: in mainstream software the mechanism layer is mature (CI release gates, metrics, and analytics are abundant), while task-usability metric families appear in no release-gate condition. This is not a claim that the industry lacks usability governance. Adjacent and vertical occupants are recorded, not denied:</p>
+<ul>
+  <li><strong>Games User Research</strong> (IGDA GUR SIG) — a same-layer vertical precedent in the games industry.</li>
+  <li><strong>IEC 62366</strong> usability engineering — the regulated vertical (medical devices).</li>
+  <li><strong>Continuous UX measurement, product analytics, ResearchOps</strong> — the measurement-and-discourse layer.</li>
+</ul>
+<p>Mainstream software demonstrably accommodates governance disciplines with institutional slots — accessibility engineering is the worked example — which is what makes this slot shape credible. The term is <strong>not</strong> a software development methodology (not a member of the *-DD family), and <strong>not</strong> a subtype of software testing: its measuring object is whether people find their way, not whether the machine is correct.</p>
+
+<h2>Disambiguation</h2>
+<ul>
+  <li>The initialism <strong>“CUE” is occupied</strong> by Molich's <em>Comparative Usability Evaluation</em> series (1998–2018, ten rounds) — an unrelated long-running series of usability-evaluation-method comparison studies. External material for the practice on this page uses the full name and avoids the initialism.</li>
+  <li>Not <em>“continuous use”</em> — retention and engagement analytics.</li>
+</ul>
+
+<h2>Status and provenance</h2>
+<p>This page is a terminology placeholder and genealogy record, first published <time datetime="2026-11-17">2026-11-17</time>. The term is in early use by its initial practitioner; the definition above is a working definition and may evolve (see changelog). External adoption is the test that matters for any engineering discipline, and has not yet occurred. Source, edit history, and issue tracker: <a href="https://github.com/xBinKai/continuous-usability-engineering">github.com/xBinKai/continuous-usability-engineering</a>.</p>
+
+<h2>Changelog</h2>
+<ul>
+  <li><time datetime="2026-11-17">2026-11-17</time> — initial publication: working definition, character, genealogy, scope and neighbors, disambiguation. Ledger anchor (practitioner cross-version issue registry, 798 entries): <code>sha256:35f0404e4a1f78d5d202916656ac6224e8f4cddc53d32e4c5b00f901a941aa12</code></li>
+</ul>
+
+<footer>
+  <p>Text content: CC&nbsp;BY&nbsp;4.0. Chinese name: 持续易用性工程. <a href="https://github.com/xBinKai/continuous-usability-engineering">Source &amp; history</a>.</p>
+</footer>
+
+</body>
+</html>
