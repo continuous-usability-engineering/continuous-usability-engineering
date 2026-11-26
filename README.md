@@ -4,7 +4,7 @@ Source of [continuoususabilityengineering.org](https://continuoususabilityengine
 
 Editing rules:
 
-- **This is an external surface.** It carries the definition and its public record only — no internal process details (who reviewed a change, how it was decided), no project codenames, issue numbers, or internal paths.
+- **This is an external surface.** It carries the definition and its public record only — no internal process details (who reviewed a change, how it was decided), no project codenames, issue numbers, internal paths, or round labels.
 - **Changelog entries and commit messages describe the change itself.** Git history is public too.
 - **Use the practice's full name.** The initialism is occupied (see *Disambiguation* on the page).
 - **Keep `index.html` and `zh.html` in sync.**
