@@ -33,13 +33,13 @@
 
 <h2>Character</h2>
 <ul>
-  <li><strong>Deficit-driven, not test-first.</strong> Work is driven by gaps <em>discovered</em> in measurement rounds, not by assertions declared in advance. Declared numbers may inform intent but never gate a release.</li>
-  <li><strong>Cycles, not sessions.</strong> The unit of work is a measurement round; round <em>N</em>'s readings are round <em>N+1</em>'s prescription input. Quantitative targets are warm-started from measurement history rather than cold-started before any data exists — continuity is what makes quantification affordable.</li>
+  <li><strong>Deficit-driven, not test-first.</strong> The repair queue is driven by gaps <em>discovered</em> in measurement rounds, not by assertions declared in advance (what gets measured is a human-governed choice, not an emergent one). Numbers declared without an anchor may inform intent but never gate a release; a threshold gates only on an anchor — derived by analysis and signed off by a person, drawn from measurement history (one's own, or another's within a stated validity domain), or set by regulation, which gates as compliance and never as evidence of what users tolerate.</li>
+  <li><strong>Cycles, not sessions.</strong> The unit of work is a measurement round; round <em>N</em>'s readings are round <em>N+1</em>'s prescription input. Quantitative targets are warm-started from measurement history rather than cold-started before any data exists — continuity is what makes quantification affordable. Affordability is bounded, not a promise of getting cheaper: it removes the cost of rediscovery, while the cost of holding the ledger (registry, guards, re-anchoring) does not decline.</li>
   <li><strong>Human adjudication is a load-bearing invariant.</strong> Severity judgment and issue acceptance remain human decisions as the practice scales; they are not mechanized away.</li>
 </ul>
 
 <h2>Genealogy</h2>
-<p>Inherited, with deliberate modification, from <strong>Usability Engineering</strong> (Tyldesley&nbsp;1988; Nielsen&nbsp;1993). The ancestor's quantitative core — usability as a measurable engineering quantity, tested after construction — is retained in full. What is modified is its unconditional front-loading of quantitative targets: the practice front-loads only what is mechanically derivable (semantic floors: required information × required decisions), and derives tolerance bands from accumulated measurement history instead.</p>
+<p>Inherited, with deliberate modification, from <strong>Usability Engineering</strong> (Tyldesley&nbsp;1988; Nielsen&nbsp;1993). The ancestor's quantitative core — usability as a measurable engineering quantity, tested after construction — is retained in full. What is modified is its unconditional front-loading of quantitative targets: the practice front-loads only what is analytically derivable and human-signed-off (semantic floors: required information × required decisions), and anchors tolerance bands in measurement history instead.</p>
 <p>From <strong>Site Reliability Engineering</strong> it takes the institutional form, not the domain: formation by having software engineers design the verification function; a named role and budget line rather than a project ritual; regression ledgers and gate policy rather than one-off studies. In one line — the ancestor said <em>“set quantitative goals, build, then test”</em>; this practice says <em>“measure first, then quantify; derive first, then prescribe; run continuously so that quantification and prescription regenerate each cycle.”</em></p>
 
 <h2>Scope and neighbors</h2>
@@ -63,6 +63,7 @@
 
 <h2>Changelog</h2>
 <ul>
+<li><time datetime="2026-11-26">2026-11-26</time> — adjudication revision (internal hard-core panel, five independent reviewers): “declared numbers” qualified as anchorless — anchored thresholds (analysis, measurement history, or regulation as compliance) may gate; front-loading restated as analytically derivable and human-signed-off; continuity's affordability bounded (ledger-holding costs do not decline); repair-queue scope note added.</li>
 <li><time datetime="2026-11-25">2026-11-25</time> — round rr7-20261121 ledger anchor (cross-version issue registries, 2815 entries): <code>sha256:66406bea7c6d03ac2ddc5f7fc63026597c7eb1db6915505931a62d53b41297eb</code></li>
 <li><time datetime="2026-11-23">2026-11-23</time> — round rr7 ledger anchor (cross-version issue registries, 2779 entries): <code>sha256:378e1a9ac3bf4f76bc87d539a510943d407ad1acc2a868ee0ef3fdb753a4d7b4</code></li>
   <li><time datetime="2026-11-20">2026-11-20</time> — round rr6 ledger anchor (cross-version issue registries, 2763 entries): <code>sha256:d4325cd7cacec9ed331ceb64a43eac7173102ac598fd100270b0c02ffe4ebe79</code></li>
